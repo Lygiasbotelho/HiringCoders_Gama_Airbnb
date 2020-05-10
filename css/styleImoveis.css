@@ -1,0 +1,53 @@
+
+/*Imoveis*/
+h2{
+    font-weight: bold;
+    color: rgb(72, 72, 72);
+}
+
+.cardsContainer {
+    margin-top: 50px;
+    width: 100%;  
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    
+}
+.cardEstadia{
+    display: flex;
+/*    margin: 20px 10px 20px 10px;*/
+    padding-bottom: 30px;
+    border-bottom: 1px solid #F1ECFF;
+}
+.imgEstadia{border: 1px solid yellow;
+    width: 300px;
+    height: 200px;/*display: flex;*/
+}
+.carrouselEstadia{
+    border: 1px solid pink;
+    width: 300px;
+    height: 200px;
+}
+.detalhesEstadia{
+    width: auto;
+   /* padding: 10px;*/
+    border: 1px solid blue;
+   /* box-sizing: border-box;*/
+}
+.descricao{ 
+    height: 85%;
+}
+.preco{
+    font-size: 18px;
+    /*align-items: baseline;*/
+    height: 15%;
+    width: 100%;
+    text-align: right;
+    border: 1px solid red;
+}
+
+.mapa{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
