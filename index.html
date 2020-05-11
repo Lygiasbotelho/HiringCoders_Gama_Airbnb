@@ -101,34 +101,35 @@
 
 
                         <!--Filtros com input-->
-                        
+
                         <div class="row filtros">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="lbFiltros">LOCALIZAÇÃO</label>
-                                    <input type="text" class="form-control form-control-sm iptFiltros" placeholder="Para onde você vai?">
+                                    <input type="text" class="form-control form-control-sm iptFiltros"
+                                        placeholder="Para onde você vai?">
                                 </div>
 
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label class="lbFiltros">CHECKIN</label>
-                                    <input type="text" data-provide="datepicker" class="form-control form-control-sm iptFiltros"
-                                        placeholder="Data de Entrada">
+                                    <input type="text" data-provide="datepicker"
+                                        class="form-control form-control-sm iptFiltros" placeholder="Data de Entrada">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label class="lbFiltros">CHECKOUT</label>
-                                    <input type="text" data-provide="datepicker" class="form-control form-control-sm iptFiltros"
-                                        placeholder="Data de Saída">
+                                    <input type="text" data-provide="datepicker"
+                                        class="form-control form-control-sm iptFiltros" placeholder="Data de Saída">
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="lbFiltros">HÓSPEDES</label>
-                                    <input type="text" id="input-you-go" class="form-control form-control-sm iptFiltros" readonly
-                                        placeholder="Insira o número de hóspedes">
+                                    <input type="text" id="input-you-go" class="form-control form-control-sm iptFiltros"
+                                        readonly placeholder="Insira o número de hóspedes">
                                 </div>
                                 <div id="you-go" style="display: none;">
                                     <div>
@@ -161,8 +162,10 @@
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <button class="btn btn-primary btn-lg btnBuscar"><i class="fas fa-search"></i>  Buscar</button>
-            
+                                <button id="btn-buscar" class="btn btn-primary btn-lg btnBuscar" onclick="buscar()" target="_blank"><i
+                                        class="fas fa-search"></i>
+                                    Buscar</button>
+
                             </div>
 
                         </div>
@@ -180,41 +183,72 @@
             </div>
 
             <div class="row">
-            <div class="col-md-4">
+                <div class="col-md-4">
 
-                <div class="card cartao">
-                    <img class="card-img-top" src="img/6.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5>Experiências online</h5>
-                      <p class="card-text">Atividades únicas que podemos fazer juntos, oferecidas por anfitriões de todo o mundo.</p>
+                    <div class="card cartao">
+                        <img class="card-img-top" src="img/6.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5>Experiências online</h5>
+                            <p class="card-text">Atividades únicas que podemos fazer juntos, oferecidas por anfitriões
+                                de todo o mundo.</p>
+                        </div>
                     </div>
-                  </div>
-            </div>
-            <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
 
-                <div class="card cartao">
-                    <img class="card-img-top" src="img/7.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5>Estadias prolongadas.</h5>
-                      <p class="card-text">Sinta-se em casa com o Airbnb com estadias de um mês ou mais.</p>
+                    <div class="card cartao">
+                        <img class="card-img-top" src="img/7.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5>Estadias prolongadas.</h5>
+                            <p class="card-text">Sinta-se em casa com o Airbnb com estadias de um mês ou mais.</p>
+                        </div>
                     </div>
-                  </div>
-            </div>
-            <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
 
-                <div class="card cartao">
-                    <img class="card-img-top" src="img/8.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5>Informações atualizadas.</h5>
-                      <p class="card-text">Saiba mais sobre as ações que estamos tomando em relação à COVID-19.</p>
+                    <div class="card cartao">
+                        <img class="card-img-top" src="img/8.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5>Informações atualizadas.</h5>
+                            <p class="card-text">Saiba mais sobre as ações que estamos tomando em relação à COVID-19.
+                            </p>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
-        </div>
         </div>
     </div>
+    <!--
+    <script>
+        function buscar() {
+        window.location.href="/imoveis.html";
+    }
+/*
+$(document).on('ready', function(){
+     $('#btnBuscar').on('click',function(){
+         var link = document.createElement("a");
+         link.href = 'http://www.facebook.com/';
+         link.style = "visibility:hidden";
+         link.target = "_blank";
+         document.body.appendChild(link);
+         link.click();
+         document.body.removeChild(link); 
+     });
+});
+        /*console.log("eiiiiii");
+        var btn = document.getElementById('btnBuscar');
+        btn.addEventListener('click', function (event) {
+            console.log("eii");
+            alert("ahhhhh");
+            window.location.href = 'https://www.google.com/';
+        });
+        /*function buscar() {
 
+                window.open("http://www.facebook.com/");
 
+            console.log("Oii");
+        }*/
+    </script>-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

@@ -15,6 +15,8 @@ function SiteController($) {
         $('#btn-adult-remove').on('click ', remove);
         $('#btn-children-remove').on('click ', remove);
         $('#btn-baby-remove').on('click ', remove);
+
+        $('#btn-buscar').on('click ', buscar);
     }
     function toggleYouGo(e) {
         let $div = $("#you-go");
@@ -101,6 +103,11 @@ function SiteController($) {
             textA = textA.concat(textB);
             $("#input-you-go").val(textA);
         }
+    }
+
+    function buscar(e) {
+        window.open("http://" + window.location.host + "/imoveis.html");
+        console.log("Oii");
     }
 
 }

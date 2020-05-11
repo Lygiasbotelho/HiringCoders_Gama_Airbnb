@@ -15,58 +15,30 @@
 </head>
 
 <body>
-    
+
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-9">
                 <h2>Encontre ótimos lugares para estadias mais longas</h2>
 
                 <!--Modelo-->
-                <div class="flex-container cardsContainer">
-                    <div class=" cardEstadia">
-                        <div class="row">
-                            <div class="col-md-5 carrouselEstadia">
-                                <img class="imgEstadia" src="img/1.jpg">
-                            </div>
-                            <div class="col-md-7 detalhesEstadia">
-                                <div class="descricao">
-                                    <h6>Loft Inteiro</h6>
-                                    <h4>Lindo estúdio</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nunc erat,
-                                        convallis
-                                        vel elementum non, egestas et lacus.</p>
-                                </div>
-                                <div class="preco"><strong>R$2.098</strong> /mês</div>
-                            </div>
-                        </div>
-                       
-                        
+                <div class="row">
+                    <div id="div-imoveis" class="col-md-12 flex-container cardsContainer">
+
                     </div>
-                    <!--
-                    <div class=" cardEstadia">
-                        <div class="carrouselEstadia"><img class="imgEstadia" src="img/1.jpg"></div>
-                        <div class="detalhesEstadia">
-                            <div class="descricao">
-                                <h6>Loft Inteiro</h6>
-                                <h4>Lindo estúdio</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nunc erat,
-                                    convallis
-                                    vel elementum non, egestas et lacus.</p>
-                            </div>
-                            <div class="preco"><strong>R$2.098</strong> /mês</div>
-                        </div>
-                    </div>-->
-                  
+                    <nav aria-label="Page navigation example">
+                        <ul id="ul-pagination" class="pagination">
+
+                        </ul>
+                    </nav>
                 </div>
             </div>
 
-            <div class="col-md-4 ">
-                <img class="mapa" src="img/1.jpg">
+            <div id="map" class="col-md-3 mapa">
+                <img id="map" src="img/1.jpg">
             </div>
 
-
-
-            <!--Com API-->
+            <!--Com API--
             <div class="flex-container">
                 <div class="row" id="div-imoveis">
 
@@ -76,9 +48,26 @@
 
                     </ul>
                 </nav>
-            </div>
+            </div>-->
 
         </div>
+
+        <script>
+            var map;
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: { lat: -34.397, lng: 150.644 },
+                    zoom: 8
+                });
+            }
+        </script>
+
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxEtc07mcOkkKnvZebVkiUrfgUZjl00jQ&callback=initMap"
+            async defer></script>
+
+
+
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
             crossorigin="anonymous"></script>

@@ -3,7 +3,6 @@ function ImoveisView($) {
     let pageSize = 5;
     let page = getParameters("page");
     const host = window.location.host;
-    console.log(host);
 
     self.listImoveis = function (list) {
         if (list == null || list == undefined) return;
@@ -11,9 +10,18 @@ function ImoveisView($) {
 
         const paginateArray = list.slice(page * pageSize, page * pageSize + pageSize);
         paginateArray.forEach(element => {
-            let $card = "<div class=\"card\">"
-                + "<div class=\"card-body\">"
-                + "<span>" + element.name + "</span>"
+            console.log(element);
+            let $card = "<div class=\"cardEstadia\">"
+                + "<div class=\"col-md-5 carrouselEstadia\">"
+                + "<img class=\"imgEstadia\" src=" + element.photo + "></div>"
+                + "<div class=\"col-md-7 detalhesEstadia\">"
+                + "<div class=\"descricao\">"
+                + "<h6>" + element.property_type + "</h6>"
+                + "<h4>" + element.name + "</h4>"
+                + "<p>...</p>"
+                + "</div>"
+                + "<div class=\"preco\">"
+                + "<strong>R$ " + element.price + "</strong> /mês</div>"
                 + "</div>"
                 + "</div>";
             $div.append($card);
