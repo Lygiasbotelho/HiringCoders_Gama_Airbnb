@@ -142,4 +142,16 @@ h4{
 .cartao img{
     border-radius: 20px;
 }
+.circulo{
+    border-radius: 50px 20px;
+}
+.hospedes{
+    position: relative; 
+    border: 1px solid #F7F7F7;
+}
+.qtdHospedes{
+    z-index:999;
+    border: none;
+}
+
 /*Fim */

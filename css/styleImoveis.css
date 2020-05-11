@@ -1,13 +1,11 @@
 
 /*Imoveis*/
-h2, h5{
+h2{
     font-weight: bold;
     color: rgb(72, 72, 72);
 }
-
-
 .cardsContainer {
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;  
     /*border: 1px solid green;*/
     display: flex;
@@ -16,19 +14,17 @@ h2, h5{
 }
 .cardEstadia{
     display: flex;
-    /*border: 1px solid red;*/
-/*    margin: 20px 10px 20px 10px;*/
-    padding-bottom: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     border-bottom: 1px solid #F1ECFF;
 }
-.imgEstadia{/*border: 1px solid yellow;*/
+.imgEstadia{
     width: 300px;
-    height: 200px;/*display: flex;*/
+    height: 200px;
     border-radius: 8px;
-    box-shadow: #F1ECFF 2px 2px 2px;
+    border: 3px solid #F1ECFF;
 }
 .carrouselEstadia{
-   /* border: 1px solid pink;*/
     width: 300px;
     height: 200px;
 }
@@ -36,20 +32,15 @@ h2, h5{
     box-sizing: border-box;
     padding-left: 20px;
     width: auto;
-   /* padding: 10px;*/
-  /*  border: 1px solid blue;*/
-   /* box-sizing: border-box;*/
 }
 .descricao{ 
     height: 85%;
 }
 .preco{
     font-size: 18px;
-    /*align-items: baseline;*/
     height: 15%;
     width: 100%;
     text-align: right;
-   /* border: 1px solid red;*/
 }
 
 .mapa{
@@ -57,11 +48,15 @@ h2, h5{
     right: 0;
     height: 100%;
     width: 100%;
-    /*width: 100%;
-    border: 1px solid red;*/
     padding: 0;
 }
 
 #map {
     height: 100%;
+}
+
+.pagina{
+    text-align: center;
+    color: rgb(72, 72, 72);
+    
 }

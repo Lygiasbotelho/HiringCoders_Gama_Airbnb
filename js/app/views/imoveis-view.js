@@ -18,7 +18,7 @@ function ImoveisView($) {
                 + "<div class=\"descricao\">"
                 + "<h6>" + element.property_type + "</h6>"
                 + "<h5>" + element.name + "</h5>"
-                + "<p>...</p>"
+                + "<p></p>"
                 + "</div>"
                 + "<div class=\"preco\">"
                 + "<strong>R$ " + element.price + "</strong> /mês</div>"
@@ -32,7 +32,7 @@ function ImoveisView($) {
         let $pagination = $("#ul-pagination");
         let totalPage = listImoveis.length / pageSize;
         for (let index = 0; index < totalPage; index++) {
-            let $li = "<li class=\"page-item\">"
+            let $li = "<li class=\"page-item pagina\">"
                 + "<a href=http://" + window.location.host + "/imoveis.html?page=" + index + ">" + index + "</a>"
                 + "</li>";
             $pagination.append($li);

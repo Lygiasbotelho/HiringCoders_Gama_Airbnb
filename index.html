@@ -125,11 +125,12 @@
                                         class="form-control form-control-sm iptFiltros" placeholder="Data de Saída">
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 hospedes">
                                 <div class="form-group">
                                     <label class="lbFiltros">HÓSPEDES</label>
                                     <input type="text" id="input-you-go" class="form-control form-control-sm iptFiltros"
                                         readonly placeholder="Insira o número de hóspedes">
+
                                 </div>
                                 <div id="you-go" style="display: none;">
                                     <div>
@@ -137,33 +138,33 @@
                                             <span>Adultos</span><br />
                                             <span>A partir de 13 anos</span>
                                         </div>
-                                        <input type="button" id="btn-adult-remove" value="-">
+                                        <input class="circulo" type="button" id="btn-adult-remove" value="-">
                                         <span id="span-adult-total">0</span>
-                                        <input type="button" id="btn-adult-add" value="+">
+                                        <input class="circulo" type="button" id="btn-adult-add" value="+">
                                     </div>
                                     <div>
                                         <div>
                                             <span>Crianças</span><br />
                                             <span>Idade 2 – 12</span>
                                         </div>
-                                        <input type="button" id="btn-children-remove" value="-">
+                                        <input class="circulo" type="button" id="btn-children-remove" value="-">
                                         <span id="span-children-total">0</span>
-                                        <input type="button" id="btn-children-add" value="+">
+                                        <input class="circulo" type="button" id="btn-children-add" value="+">
                                     </div>
                                     <div>
                                         <div>
                                             <span>Bebês</span><br />
                                             <span>Menor de 2</span>
                                         </div>
-                                        <input type="button" id="btn-baby-remove" value="-">
+                                        <input class="circulo" type="button" id="btn-baby-remove" value="-">
                                         <span id="span-baby-total">0</span>
-                                        <input type="button" id="btn-baby-add" value="+">
+                                        <input class="circulo" type="button" id="btn-baby-add" value="+">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <button id="btn-buscar" class="btn btn-primary btn-lg btnBuscar" onclick="buscar()" target="_blank"><i
-                                        class="fas fa-search"></i>
+                                <button id="btn-buscar" class="btn btn-primary btn-lg btnBuscar" onclick="buscar()"
+                                    target="_blank"><i class="fas fa-search"></i>
                                     Buscar</button>
 
                             </div>
