@@ -147,7 +147,7 @@ h4{
 }
 .hospedes{
     position: relative; 
-    border: 1px solid #F7F7F7;
+    /*border: 1px solid #F7F7F7;*/
 }
 .qtdHospedes{
     z-index:999;
