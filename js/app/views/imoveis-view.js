@@ -32,8 +32,8 @@ function ImoveisView($) {
         let $pagination = $("#ul-pagination");
         let totalPage = listImoveis.length / pageSize;
         for (let index = 0; index < totalPage; index++) {
-            let $li = "<li class=\"page-item pagina\">"
-                + "<a href=http://" + window.location.host + "/imoveis.html?page=" + index + ">" + index + "</a>"
+            let $li = "<li class=\"page-item\">"
+                + "<a class=\"page-link\" href=http://" + window.location.host + "/imoveis.html?page=" + index + ">" + index + "</a>"
                 + "</li>";
             $pagination.append($li);
         }
