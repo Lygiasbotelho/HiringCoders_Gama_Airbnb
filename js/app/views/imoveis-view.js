@@ -17,7 +17,7 @@ function ImoveisView($) {
                 + "<div class=\"col-md-7 detalhesEstadia\">"
                 + "<div class=\"descricao\">"
                 + "<h6>" + element.property_type + "</h6>"
-                + "<h4>" + element.name + "</h4>"
+                + "<h5>" + element.name + "</h5>"
                 + "<p>...</p>"
                 + "</div>"
                 + "<div class=\"preco\">"
